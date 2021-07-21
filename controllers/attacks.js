@@ -3,7 +3,7 @@ const Attack = require('../models/attack');
 
 attacksRouter.get('/', async (req, res) => {
 	try {
-		const attacks = await Attack.find({});
+		const attacks = await Attack.find({}).sort({ name: -1 });
 		res.status(200).json(attacks);
 	} catch (error) {
 		res.status(400).json({ error: error.message });
