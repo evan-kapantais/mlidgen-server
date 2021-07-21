@@ -1,0 +1,23 @@
+{
+  "name": "mlid-server",
+  "version": "1.0.0",
+  "description": "Monster Legends ID generator backend",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js"
+  },
+  "keywords": [
+    "monster legends",
+    "id generator"
+  ],
+  "author": "Evan Kapantais",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.16"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
